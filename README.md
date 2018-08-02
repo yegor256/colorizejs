@@ -1,0 +1,61 @@
+[![Managed by Zerocracy](https://www.0crat.com/badge/CAZPZR9FS.svg)](https://www.0crat.com/p/CAZPZR9FS)
+[![DevOps By Rultor.com](http://www.rultor.com/b/yegor256/zold)](http://www.rultor.com/p/yegor256/zold)
+
+[![Build Status](https://travis-ci.org/zold-io/zold.svg)](https://travis-ci.org/zold-io/zold)
+[![PDD status](http://www.0pdd.com/svg?name=zold-io/zold)](http://www.0pdd.com/p?name=zold-io/zold)
+
+It's a simple jQuery plugin to colorize data elements according to its value:
+
+```javascript
+$('#foo').colorizejs({ 500: 'green', 0: 'red' });
+```
+
+If the value of `#foo` is larger than 500, its color will be set to `green`,
+if larger than zero, it will be set to `red`, otherwise it will not be touched.
+
+You can also use classes instead of colors, but prepending them with a dot:
+
+```javascript
+$('#foo').colorizejs({ 500: '.green', 0: '.red' });
+```
+
+The easiest way is to just include it in your HTML from the CDN
+(don't forget to replace `VERSION` with the latest number you
+find [here]()):
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://cdn.rawgit.com/yegor256/colorizejs/gh-pages/colorizejs-VERSION.min.js"/>
+  </head>
+</html>
+```
+
+Download the [latest release].
+
+You can also install it with bower:
+
+```bash
+$ bower install colorizejs
+```
+
+Or with npm:
+
+```bash
+$ npm install colorizejs
+```
+
+## How to Contribute
+
+First, make sure you can build it locally:
+
+```bash
+$ npm install gulp
+$ gulp
+```
+
+The build has to be clean. If it's not, [submit an issue](https://github.com/yegor256/colorizejs/issues).
+
+Then, make your changes, make sure the build is still clean,
+and [submit a pull request](https://www.yegor256.com/2014/04/15/github-guidelines.html).
