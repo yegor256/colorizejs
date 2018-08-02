@@ -1,8 +1,7 @@
-[![Managed by Zerocracy](https://www.0crat.com/badge/CAZPZR9FS.svg)](https://www.0crat.com/p/CAZPZR9FS)
-[![DevOps By Rultor.com](http://www.rultor.com/b/yegor256/zold)](http://www.rultor.com/p/yegor256/zold)
+[![DevOps By Rultor.com](http://www.rultor.com/b/yegor256/colorizejs)](http://www.rultor.com/p/yegor256/colorizejs)
 
-[![Build Status](https://travis-ci.org/zold-io/zold.svg)](https://travis-ci.org/zold-io/zold)
-[![PDD status](http://www.0pdd.com/svg?name=zold-io/zold)](http://www.0pdd.com/p?name=zold-io/zold)
+[![Build Status](https://travis-ci.org/yegor256/colorizejs.svg)](https://travis-ci.org/yegor256/colorizejs)
+[![PDD status](http://www.0pdd.com/svg?name=yegor256/colorizejs)](http://www.0pdd.com/p?name=yegor256/colorizejs)
 
 It's a simple jQuery plugin to colorize data elements according to its value:
 
