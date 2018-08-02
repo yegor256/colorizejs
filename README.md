@@ -18,20 +18,18 @@ You can also use classes instead of colors, but prepending them with a dot:
 $('#foo').colorizejs({ 500: '.green', 0: '.red' });
 ```
 
-The easiest way is to just include it in your HTML from the CDN
-(don't forget to replace `VERSION` with the latest number you
-find [here]()):
+The easiest way is to just include it in your HTML from the CDN:
 
 ```html
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="https://cdn.rawgit.com/yegor256/colorizejs/gh-pages/colorizejs-VERSION.min.js"/>
+    <link rel="stylesheet" href="https://cdn.rawgit.com/yegor256/colorizejs/gh-pages/colorizejs.min.js"/>
   </head>
 </html>
 ```
 
-Download the [latest release].
+Download the [latest release](https://github.com/yegor256/colorizejs/releases).
 
 You can also install it with bower:
 
