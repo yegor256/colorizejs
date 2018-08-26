@@ -27,7 +27,7 @@ const { window } = new JSDOM();
 global.$ = require('jquery')(window);
 require('../src/colorizejs');
 
-describe('colorize', () => {
+describe('colorizejs', () => {
   const div = $('<div/>');
   const settings = { 30: 'highest', 20: 'middle', 10: 'lowest' };
   it('should set the applicable class', () => {
