@@ -45,7 +45,7 @@ $ npm install colorizejs
 First, make sure you can build it locally:
 
 ```bash
-$ npm install gulp
+$ npm install --global gulp-cli
 $ gulp
 ```
 
