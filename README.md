@@ -18,7 +18,8 @@ You can also use classes instead of colors, but prepending them with a dot:
 $('#foo').colorizejs({ 500: '.green', 0: '.red' });
 ```
 
-The easiest way is to just include it in your HTML from the CDN:
+The easiest way is to just include it in your HTML from the
+[RawGit CDN](https://rawgit.com/):
 
 ```html
 <!DOCTYPE html>
@@ -31,13 +32,7 @@ The easiest way is to just include it in your HTML from the CDN:
 
 Download the [latest release](https://github.com/yegor256/colorizejs/releases).
 
-You can also install it with bower:
-
-```bash
-$ bower install colorizejs
-```
-
-Or with npm:
+You can also install it with npm:
 
 ```bash
 $ npm install colorizejs

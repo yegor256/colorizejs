@@ -3,8 +3,7 @@ assets:
 install: |
   sudo apt-get -y update
   sudo gem install pdd
-  sudo npm install --no-color --global gulp
-  npm install --no-color
+  sudo npm install --no-color --global
 release:
   script: |
     [[ "${tag}" =~ ^[0-9]+\.[0-9]+\.[0-9]+$ ]] || exit -1
