@@ -3,7 +3,7 @@ assets:
 install: |
   sudo apt-get -y update
   sudo gem install pdd
-  npm install --no-color --global gulp-cli
+  sudo npm install --no-color --global gulp-cli
   npm install --no-color
 release:
   script: |
