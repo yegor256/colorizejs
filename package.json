@@ -1,6 +1,6 @@
 {
   "name": "colorizejs",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "A jQuery plugin to colorize a data element according to its value",
   "homepage": "http://github.com/yegor256/colorizejs",
   "main": "./dist/colorizejs.js",
