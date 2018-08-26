@@ -8,15 +8,16 @@ install: |
 release:
   script: |
     [[ "${tag}" =~ ^[0-9]+\.[0-9]+\.[0-9]+$ ]] || exit -1
-    gulp
     npm version "${tag}"
-    git add -f dist/colorizejs-${tag}.min.js
+    gulp
+    cp dist/colorizejs.min.js colorizejs-${tag}.min.js
+    git add -f colorizejs-${tag}.min.js
     git commit -am "Added JS file for ${tag}"
-    mv dist/colorizejs-${tag}.min.js /tmp
+    cp dist/colorizejs-${tag}.min.js /tmp
     branch=$(git rev-parse --abbrev-ref HEAD)
     git checkout gh-pages
     git reset --hard
-    mv /tmp/colorizejs-${tag}.min.js .
+    cp /tmp/colorizejs-${tag}.min.js .
     cp colorizejs-${tag}.min.js colorizejs.min.js
     git add colorizejs-${tag}.min.js
     git add colorizejs.min.js
