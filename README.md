@@ -2,6 +2,8 @@
 
 [![Build Status](https://travis-ci.org/yegor256/colorizejs.svg)](https://travis-ci.org/yegor256/colorizejs)
 [![PDD status](http://www.0pdd.com/svg?name=yegor256/colorizejs)](http://www.0pdd.com/p?name=yegor256/colorizejs)
+[![License](https://img.shields.io/badge/license-MIT-green.svg)](https://github.com/yegor256/colorizejs/blob/master/LICENSE.txt)
+[![NPM version](https://badge.fury.io/js/colorizejs.svg)](http://badge.fury.io/js/colorizejs)
 
 It's a simple jQuery plugin to colorize data elements according to its value:
 
