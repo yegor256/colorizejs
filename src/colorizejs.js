@@ -28,13 +28,27 @@ $.fn.colorize = function(colors) {
     .map(function (k) { return parseInt(k); })
     .sort(function (a,b) { return a - b; })
     .reverse();
+  var used = '';
   for (i = 0; i < keys.length; ++i) {
     var max = keys[i];
     if (data >= max) {
-      this.addClass(colors[max]);
-      return;
+      var c = colors[max];
+      if (c.startsWith('.')) {
+        this.addClass(c.substring(1));
+      } else {
+        this.css('color', c);
+      }
+      used = c;
+      break;
     }
-    this.removeClass(colors[max]);
+  }
+  for (i = 0; i < keys.length; ++i) {
+    var u = colors[keys[i]];
+    if (used != u) {
+      if (u.startsWith('.')) {
+        this.removeClass(u.substring(1));
+      }
+    }
   }
   return this;
 };
