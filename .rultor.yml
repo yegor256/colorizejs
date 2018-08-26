@@ -13,14 +13,14 @@ release:
     cp dist/colorizejs.min.js colorizejs-${tag}.min.js
     git add -f colorizejs-${tag}.min.js
     git commit -am "Added JS file for ${tag}"
-    cp dist/colorizejs-${tag}.min.js /tmp
+    cp dist/colorizejs.min.js /tmp
     branch=$(git rev-parse --abbrev-ref HEAD)
     git checkout gh-pages
     git reset --hard
-    cp /tmp/colorizejs-${tag}.min.js .
-    cp colorizejs-${tag}.min.js colorizejs.min.js
-    git add colorizejs-${tag}.min.js
+    cp /tmp/colorizejs.min.js .
     git add colorizejs.min.js
+    cp colorizejs.min.js colorizejs-${tag}.min.js
+    git add colorizejs-${tag}.min.js
     git commit --allow-empty -am "${tag}"
     git checkout "${branch}"
     chmod 600 ../npmrc
