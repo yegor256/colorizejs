@@ -1,5 +1,5 @@
 assets:
-  npmrc: zerocracy/home#assets/npmrc
+  npmrc: yegor256/home#assets/npmrc
 install: |
   sudo apt-get -y update
   sudo gem install pdd
