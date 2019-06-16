@@ -2,7 +2,7 @@ assets:
   npmrc: yegor256/home#assets/npmrc
 install: |
   sudo apt-get -y update
-  sudo gem install pdd
+  sudo gem install pdd -v 0.20.5
   sudo npm install --no-color --global gulp-cli
   npm install --no-color
 release:
