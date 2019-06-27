@@ -5,16 +5,18 @@
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](https://github.com/yegor256/colorizejs/blob/master/LICENSE.txt)
 [![NPM version](https://badge.fury.io/js/colorizejs.svg)](http://badge.fury.io/js/colorizejs)
 
-It's a simple jQuery plugin to colorize data elements according to its value:
+It's a simple [jQuery](https://jquery.com/) plugin
+to colorize data elements according to their values:
 
 ```javascript
 $('#foo').colorizejs({ 500: 'green', 0: 'red' });
 ```
 
 If the value of `#foo` is larger than 500, its color will be set to `green`,
-if larger than zero, it will be set to `red`, otherwise it will not be touched.
+if it is larger than zero, it will be set to `red`,
+otherwise it won't be touched.
 
-You can also use classes instead of colors, but prepending them with a dot:
+You can also use classes instead of colors by prepending them with a dot:
 
 ```javascript
 $('#foo').colorizejs({ 500: '.green', 0: '.red' });
@@ -32,7 +34,8 @@ The easiest way is to just include it in your HTML from the
 </html>
 ```
 
-Download the [latest release](https://github.com/yegor256/colorizejs/releases).
+Otherwise, you can download the
+[latest release](https://github.com/yegor256/colorizejs/releases).
 
 You can also install it with npm:
 
