@@ -27,7 +27,7 @@
     "jquery": "*"
   },
   "devDependencies": {
-    "del": "^3.0.0",
+    "del": "^7.0.0",
     "gulp": "^4.0.0",
     "gulp-jasmine-node": "^1.0.7",
     "gulp-jshint": "^2.0.2",
