@@ -28,7 +28,7 @@
   },
   "devDependencies": {
     "del": "^3.0.0",
-    "gulp": "^4.0.0",
+    "gulp": "^5.0.0",
     "gulp-jasmine-node": "^1.0.7",
     "gulp-jshint": "^2.0.2",
     "gulp-notify": "^4.0.0",
