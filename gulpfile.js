@@ -26,4 +26,3 @@ gulp.task('test', function () {
 });
 
 gulp.task('default', gulp.series('clean', 'compile', 'test'));
-

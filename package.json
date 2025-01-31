@@ -1,31 +1,13 @@
 {
-  "name": "colorizejs",
-  "version": "1.1.1",
-  "description": "A jQuery plugin to colorize a data element according to its value",
-  "homepage": "http://github.com/yegor256/colorizejs",
-  "main": "./dist/colorizejs.js",
-  "scripts": {
-    "test": "gulp test",
-    "build": "gulp build"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/yegor256/colorizejs"
-  },
-  "keywords": [
-    "jquery",
-    "jquery-plugin",
-    "colorizejs"
-  ],
   "author": {
     "name": "Yegor Bugayenko",
     "url": "https://www.yegor256.com"
   },
   "contributors": [],
-  "license": "MIT",
   "dependencies": {
     "jquery": "*"
   },
+  "description": "A jQuery plugin to colorize a data element according to its value",
   "devDependencies": {
     "del": "^3.0.0",
     "gulp": "^4.0.0",
@@ -37,5 +19,23 @@
     "gulp-uglify": "^3.0.1",
     "jsdom": "^24.0.0",
     "jshint": "^2.9.4"
-  }
+  },
+  "homepage": "http://github.com/yegor256/colorizejs",
+  "keywords": [
+    "jquery",
+    "jquery-plugin",
+    "colorizejs"
+  ],
+  "license": "MIT",
+  "main": "./dist/colorizejs.js",
+  "name": "colorizejs",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yegor256/colorizejs"
+  },
+  "scripts": {
+    "build": "gulp build",
+    "test": "gulp test"
+  },
+  "version": "1.1.1"
 }
