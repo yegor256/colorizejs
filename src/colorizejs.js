@@ -1,3 +1,6 @@
+// SPDX-FileCopyrightText: Copyright (c) 2018 Yegor Bugayenko
+// SPDX-License-Identifier: MIT
+
 /**
 (The MIT License)
 

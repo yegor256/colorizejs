@@ -1,3 +1,6 @@
+// SPDX-FileCopyrightText: Copyright (c) 2018 Yegor Bugayenko
+// SPDX-License-Identifier: MIT
+
 var gulp = require('gulp'),
     del = require('del'),
     run = require('gulp-run'),
