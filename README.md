@@ -1,9 +1,9 @@
-[![DevOps By Rultor.com](http://www.rultor.com/b/yegor256/colorizejs)](http://www.rultor.com/p/yegor256/colorizejs)
+[![DevOps By Rultor.com](https://www.rultor.com/b/yegor256/colorizejs)](https://www.rultor.com/p/yegor256/colorizejs)
 
 [![Build Status](https://travis-ci.org/yegor256/colorizejs.svg)](https://travis-ci.org/yegor256/colorizejs)
-[![PDD status](http://www.0pdd.com/svg?name=yegor256/colorizejs)](http://www.0pdd.com/p?name=yegor256/colorizejs)
+[![PDD status](https://www.0pdd.com/svg?name=yegor256/colorizejs)](https://www.0pdd.com/p?name=yegor256/colorizejs)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](https://github.com/yegor256/colorizejs/blob/master/LICENSE.txt)
-[![NPM version](https://badge.fury.io/js/colorizejs.svg)](http://badge.fury.io/js/colorizejs)
+[![NPM version](https://badge.fury.io/js/colorizejs.svg)](https://badge.fury.io/js/colorizejs)
 
 It's a simple [jQuery](https://jquery.com/) plugin
 to colorize data elements according to their values:
