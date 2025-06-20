@@ -20,7 +20,7 @@
     "jsdom": "^24.0.0",
     "jshint": "^2.9.4"
   },
-  "homepage": "http://github.com/yegor256/colorizejs",
+  "homepage": "https://github.com/yegor256/colorizejs",
   "keywords": [
     "jquery",
     "jquery-plugin",
