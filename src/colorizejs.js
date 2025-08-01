@@ -30,20 +30,16 @@ $.fn.colorize = function (colors) {
 	const sortedThresholds = getSortedThresholds(colors);
 	const appliedColor = findAndApplyColor(this, data, sortedThresholds, colors);
 	cleanupUnusedColors(this, sortedThresholds, colors, appliedColor);
-
 	return this;
 };
-
 function getSortedThresholds(colors) {
 	return Object.keys(colors)
 		.map((key) => parseInt(key))
 		.sort((a, b) => b - a);
 }
-
 function findAndApplyColor(element, data, thresholds, colors) {
 	for (let i = 0; i < thresholds.length; i++) {
 		const threshold = thresholds[i];
-
 		if (data >= threshold) {
 			const colorValue = colors[threshold];
 			applyColor(element, colorValue);
@@ -52,7 +48,6 @@ function findAndApplyColor(element, data, thresholds, colors) {
 	}
 	return '';
 }
-
 function applyColor(element, colorValue) {
 	if (colorValue.startsWith('.')) {
 		element.addClass(colorValue.substring(1));
@@ -60,11 +55,9 @@ function applyColor(element, colorValue) {
 		element.css('color', colorValue);
 	}
 }
-
 function cleanupUnusedColors(element, thresholds, colors, appliedColor) {
 	for (let i = 0; i < thresholds.length; i++) {
 		const colorValue = colors[thresholds[i]];
-
 		if (appliedColor !== colorValue && colorValue.startsWith('.')) {
 			element.removeClass(colorValue.substring(1));
 		}
