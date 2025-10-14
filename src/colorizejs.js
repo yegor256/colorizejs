@@ -32,7 +32,7 @@ $.fn.colorize = function(colors) {
     .sort(function (a,b) { return a - b; })
     .reverse();
   var used = '';
-  for (i = 0; i < keys.length; ++i) {
+  for (var i = 0; i < keys.length; ++i) {
     var max = keys[i];
     if (data >= max) {
       var c = colors[max];
@@ -45,7 +45,7 @@ $.fn.colorize = function(colors) {
       break;
     }
   }
-  for (i = 0; i < keys.length; ++i) {
+  for (var i = 0; i < keys.length; ++i) {
     var u = colors[keys[i]];
     if (used != u) {
       if (u.startsWith('.')) {
