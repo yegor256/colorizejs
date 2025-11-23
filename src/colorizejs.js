@@ -25,33 +25,41 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
 
-$.fn.colorize = function(colors) {
-  var data = parseFloat(this.text());
-  var keys = Object.keys(colors)
-    .map(function (k) { return parseInt(k); })
-    .sort(function (a,b) { return a - b; })
-    .reverse();
-  var used = '';
-  for (i = 0; i < keys.length; ++i) {
-    var max = keys[i];
-    if (data >= max) {
-      var c = colors[max];
-      if (c.startsWith('.')) {
-        this.addClass(c.substring(1));
-      } else {
-        this.css('color', c);
-      }
-      used = c;
-      break;
-    }
-  }
-  for (i = 0; i < keys.length; ++i) {
-    var u = colors[keys[i]];
-    if (used != u) {
-      if (u.startsWith('.')) {
-        this.removeClass(u.substring(1));
-      }
-    }
-  }
-  return this;
+$.fn.colorize = function (colors) {
+	const data = parseFloat(this.text());
+	const sortedThresholds = getSortedThresholds(colors);
+	const appliedColor = findAndApplyColor(this, data, sortedThresholds, colors);
+	cleanupUnusedColors(this, sortedThresholds, colors, appliedColor);
+	return this;
 };
+function getSortedThresholds(colors) {
+	return Object.keys(colors)
+		.map((key) => parseInt(key))
+		.sort((a, b) => b - a);
+}
+function findAndApplyColor(element, data, thresholds, colors) {
+	for (let i = 0; i < thresholds.length; i++) {
+		const threshold = thresholds[i];
+		if (data >= threshold) {
+			const colorValue = colors[threshold];
+			applyColor(element, colorValue);
+			return colorValue;
+		}
+	}
+	return '';
+}
+function applyColor(element, colorValue) {
+	if (colorValue.startsWith('.')) {
+		element.addClass(colorValue.substring(1));
+	} else {
+		element.css('color', colorValue);
+	}
+}
+function cleanupUnusedColors(element, thresholds, colors, appliedColor) {
+	for (let i = 0; i < thresholds.length; i++) {
+		const colorValue = colors[thresholds[i]];
+		if (appliedColor !== colorValue && colorValue.startsWith('.')) {
+			element.removeClass(colorValue.substring(1));
+		}
+	}
+}
