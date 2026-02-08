@@ -1,3 +1,5 @@
+# colorizejs
+
 [![DevOps By Rultor.com](https://www.rultor.com/b/yegor256/colorizejs)](https://www.rultor.com/p/yegor256/colorizejs)
 
 [![Build Status](https://travis-ci.org/yegor256/colorizejs.svg)](https://travis-ci.org/yegor256/colorizejs)
@@ -40,7 +42,7 @@ Otherwise, you can download the
 You can also install it with npm:
 
 ```bash
-$ npm install colorizejs
+npm install colorizejs
 ```
 
 ## How to Contribute
@@ -48,8 +50,8 @@ $ npm install colorizejs
 First, make sure you can build it locally:
 
 ```bash
-$ npm install --global gulp-cli
-$ gulp
+npm install --global gulp-cli
+gulp
 ```
 
 The build has to be clean. If it's not, [submit an issue](https://github.com/yegor256/colorizejs/issues).

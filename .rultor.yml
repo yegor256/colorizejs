@@ -1,3 +1,4 @@
+---
 # SPDX-FileCopyrightText: Copyright (c) 2018 Yegor Bugayenko
 # SPDX-License-Identifier: MIT
 
@@ -29,7 +30,7 @@ release:
     chmod 600 ../npmrc
     npm publish --no-color --userconfig=../npmrc
 architect:
-- yegor256
+  - yegor256
 merge:
   script: |-
     gulp
