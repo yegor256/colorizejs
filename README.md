@@ -45,7 +45,6 @@ You can also install it with npm:
 npm install colorizejs
 ```
 
-
 ## Example
 
 A minimal `example.html` file is included to demonstrate how ColorizeJS colours numeric values
@@ -59,7 +58,6 @@ To try it:
 
 This file is mainly for users or developers who want a quick way to verify
 that the plugin works after cloning the repository.
-
 
 ## How to Contribute
 
