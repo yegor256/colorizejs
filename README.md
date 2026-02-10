@@ -44,6 +44,17 @@ You can also install it with npm:
 ```bash
 npm install colorizejs
 ```
+## Example
+
+A minimal `example.html` file is included to demonstrate how ColorizeJS colours numeric values based on defined rules.
+
+To try it:
+
+1. Open `example.html` in a browser.
+2. See the number "350" appear in red according to the rules `{ 500: '.green', 0: '.red' }`.
+
+This file is mainly for users or developers who want a quick way to verify that the plugin works after cloning the repository.
+
 
 ## How to Contribute
 
