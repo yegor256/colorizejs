@@ -26,4 +26,5 @@ jobs:
           node-version: ${{ matrix.node }}
       - run: npm install
       - run: npm install --force -g grunt-cli
-      - run: grunt
+      - run: npx gulp
+
