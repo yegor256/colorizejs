@@ -47,7 +47,7 @@ npm install colorizejs
 
 ## Example
 
-A minimal `example.html` file is included to demonstrate 
+A minimal `example.html` file is included to demonstrate
 how ColorizeJS colours numeric values
 based on defined rules.
 
