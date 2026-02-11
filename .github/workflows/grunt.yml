@@ -12,6 +12,7 @@ name: grunt
       - master
 jobs:
   grunt:
+    timeout-minutes: 15
     strategy:
       matrix:
         os: [windows-2022, ubuntu-24.04, macos-15]
@@ -20,9 +21,9 @@ jobs:
     runs-on: ${{ matrix.os }}
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-node@v6
+      - uses: actions/setup-node@v4
         with:
           node-version: ${{ matrix.node }}
       - run: npm install
       - run: npm install --force -g grunt-cli
-      - run: grunt
+      - run: npx gulp
