@@ -1,8 +1,8 @@
-# SPDX-FileCopyrightText: Copyright (c) 2019-2026 Yegor Bugayenko
+# SPDX-FileCopyrightText: Copyright (c) 2018 Yegor Bugayenko
 # SPDX-License-Identifier: MIT
 ---
 # yamllint disable rule:line-length
-name: grunt
+name: gulp
 'on':
   push:
     branches:
@@ -11,7 +11,8 @@ name: grunt
     branches:
       - master
 jobs:
-  grunt:
+  gulp:
+    timeout-minutes: 15
     strategy:
       matrix:
         os: [windows-2022, ubuntu-24.04, macos-15]
@@ -20,9 +21,9 @@ jobs:
     runs-on: ${{ matrix.os }}
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-node@v6
+      - uses: actions/setup-node@v4
         with:
           node-version: ${{ matrix.node }}
       - run: npm install
       - run: npm install --force -g grunt-cli
-      - run: grunt
+      - run: npx gulp
