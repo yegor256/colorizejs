@@ -1,4 +1,4 @@
-# colorizejs
+# A jQuery Plugin for Conditional Colorization
 
 [![DevOps By Rultor.com](https://www.rultor.com/b/yegor256/colorizejs)](https://www.rultor.com/p/yegor256/colorizejs)
 
