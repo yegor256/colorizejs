@@ -25,13 +25,15 @@ $('#foo').colorizejs({ 500: '.green', 0: '.red' });
 ```
 
 The easiest way is to just include it in your HTML from the
-  [RawGit CDN](https://rawgit.com/):
+  [jsDelivr CDN](https://www.jsdelivr.com/):
 
 ```html
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="https://cdn.rawgit.com/yegor256/colorizejs/gh-pages/colorizejs.min.js"/>
+    <script src="https://cdn.jsdelivr.net/npm/colorizejs@1.1.1/colorizejs-0.1.0.min.js"
+            integrity="sha384-dtUrO7M8pPJkCd97BZUabNxLxnb8IJsmLVpA5wdaitvMsIO6pAWSR+EmC8U5v7/O"
+            crossorigin="anonymous"></script>
   </head>
 </html>
 ```
