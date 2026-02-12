@@ -1,11 +1,12 @@
----
 # SPDX-FileCopyrightText: Copyright (c) 2018 Yegor Bugayenko
 # SPDX-License-Identifier: MIT
-
+---
+# yamllint disable rule:line-length
+docker:
+  image: yegor256/rultor-image:1.24.0
 assets:
   npmrc: yegor256/home#assets/npmrc
 install: |
-  sudo apt-get -y update
   sudo gem install pdd -v 0.20.5
   sudo npm install --no-color --global gulp-cli
   npm install --no-color
@@ -29,8 +30,6 @@ release:
     git checkout "${branch}"
     chmod 600 ../npmrc
     npm publish --no-color --userconfig=../npmrc
-architect:
-  - yegor256
 merge:
   script: |-
     gulp
