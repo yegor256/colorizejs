@@ -7,7 +7,7 @@ docker:
 assets:
   npmrc: yegor256/home#assets/npmrc
 install: |
-  sudo gem install pdd -v 0.20.5
+  sudo gem install pdd -v 0.24.2
   sudo npm install --no-color --global gulp-cli
   npm install --no-color
 release:
