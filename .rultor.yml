@@ -28,6 +28,7 @@ release:
     git add colorizejs-${tag}.min.js
     git commit --allow-empty -am "${tag}"
     git checkout "${branch}"
+    npm version "${tag}" --no-git-tag-version
     chmod 600 ../npmrc
     npm publish --no-color --userconfig=../npmrc
 merge:
