@@ -31,8 +31,8 @@ The easiest way is to just include it in your HTML from the
 <!DOCTYPE html>
 <html>
   <head>
-    <script src="https://cdn.jsdelivr.net/npm/colorizejs@1.1.1/colorizejs-0.1.0.min.js"
-            integrity="sha384-dtUrO7M8pPJkCd97BZUabNxLxnb8IJsmLVpA5wdaitvMsIO6pAWSR+EmC8U5v7/O"
+    <script src="https://cdn.jsdelivr.net/npm/colorizejs@1.2.0/colorizejs-1.2.0.min.js"
+            integrity="sha384-Nk8DOyZntjNMRKhFcmFT36tbZ/qMucmsm8KLzUc6D1d4RI4qgokGlKi/yUFXK51M"
             crossorigin="anonymous"></script>
   </head>
 </html>
