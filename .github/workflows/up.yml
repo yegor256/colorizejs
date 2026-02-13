@@ -1,22 +1,28 @@
-# SPDX-FileCopyrightText: Copyright (c) 2019-2026 Yegor Bugayenko
+# SPDX-FileCopyrightText: Copyright (c) 2018 Yegor Bugayenko
 # SPDX-License-Identifier: MIT
 ---
 # yamllint disable rule:line-length
 name: up
 'on':
   push:
+    branches:
+      - master
 jobs:
   up:
     timeout-minutes: 15
     runs-on: ubuntu-24.04
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
       - run: |-
           git fetch --tags --force && \
           latest=$(git tag --sort=creatordate | tail -1) && \
-          sed -E -i "s/drops@[0-9.]+/drops@${latest}/g" README.md
-          sed -E -i "s/drops-[0-9.]+\.min/drops-${latest}.min/g" README.md
-      - uses: peter-evans/create-pull-request@v7
+          sed -E -i "s/colorizejs@[0-9.]+/colorizejs@${latest}/g" README.md
+          sed -E -i "s/colorizejs-[0-9.]+\.min\.js/colorizejs-${latest}.min.js/g" README.md
+          sri=$(curl -fsSL --compressed "https://cdn.jsdelivr.net/npm/colorizejs@${latest}/colorizejs-${latest}.min.js" \
+              | openssl dgst -sha384 -binary | openssl base64 -A)
+          esc=$(printf '%s' "$sri" | sed 's/[&]/\\&/g')
+          sed -E -i "s#integrity=\"[^\"]*\"#integrity=\"sha384-$esc\"#g" README.md
+      - uses: peter-evans/create-pull-request@v8
         with:
           sign-commits: true
           commit-message: 'new version in README'
