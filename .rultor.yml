@@ -7,14 +7,12 @@ docker:
 assets:
   npmrc: yegor256/home#assets/npmrc
 install: |
-  sudo gem install pdd -v 0.24.2
-  sudo npm install --no-color --global gulp-cli
   npm install --no-color
 release:
   pre: false
   script: |
     [[ "${tag}" =~ ^[0-9]+\.[0-9]+\.[0-9]+$ ]] || exit -1
-    gulp --no-color
+    npx gulp --no-color
     cp dist/colorizejs.min.js colorizejs-${tag}.min.js
     git add -f colorizejs-${tag}.min.js
     git commit -am "Added JS file for ${tag}"
@@ -35,7 +33,3 @@ merge:
   script: |-
     gulp
     pdd -f /dev/null -v
-deploy:
-  script: |-
-    echo "There is nothing to deploy"
-    exit -1
