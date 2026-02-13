@@ -9,7 +9,7 @@
   },
   "description": "A jQuery plugin to colorize a data element according to its value",
   "devDependencies": {
-    "del": "^3.0.0",
+    "del": "^8.0.0",
     "gulp": "^4.0.0",
     "gulp-jasmine-node": "^1.0.7",
     "gulp-jshint": "^2.0.2",
