@@ -17,7 +17,8 @@ jobs:
           git fetch --tags --force && \
           latest=$(git tag --sort=creatordate | tail -1) && \
           sed -E -i "s/colorizejs@[0-9.]+/colorizejs@${latest}/g" README.md
-          sri=$(curl -fsSL --compressed "https://cdn.jsdelivr.net/npm/colorizejs@${latest}/colorizejs-0.1.0.min.js" \
+          sed -E -i "s/colorizejs-[0-9.]+\.min\.js/colorizejs-${latest}.min.js/g" README.md
+          sri=$(curl -fsSL --compressed "https://cdn.jsdelivr.net/npm/colorizejs@${latest}/colorizejs-${latest}.min.js" \
               | openssl dgst -sha384 -binary | openssl base64 -A)
           esc=$(printf '%s' "$sri" | sed 's/[&]/\\&/g')
           sed -E -i "s/integrity=\"[^\"]*\"/integrity=\"sha384-$esc\"/g" README.md
