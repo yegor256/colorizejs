@@ -8,6 +8,7 @@ assets:
   npmrc: yegor256/home#assets/npmrc
 install: |
   npm install --no-color
+  pdd -f /dev/null -v
 release:
   pre: false
   script: |
@@ -31,5 +32,4 @@ release:
     npm publish --no-color --userconfig=../npmrc
 merge:
   script: |-
-    gulp
-    pdd -f /dev/null -v
+    npx gulp --no-color
