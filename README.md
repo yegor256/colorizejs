@@ -1,5 +1,7 @@
 # colorizejs
+
 Current version: 1.2.0
+
 [![DevOps By Rultor.com](https://www.rultor.com/b/yegor256/colorizejs)](https://www.rultor.com/p/yegor256/colorizejs)
 
 [![Build Status](https://travis-ci.org/yegor256/colorizejs.svg)](https://travis-ci.org/yegor256/colorizejs)
