@@ -13,12 +13,13 @@
     "gulp": "^4.0.0",
     "gulp-jasmine-node": "^1.0.7",
     "gulp-jshint": "^2.0.2",
-    "gulp-notify": "^4.0.0",
+    "gulp-notify": "^5.0.0",
     "gulp-rename": "^2.0.0",
     "gulp-run": "^1.7.1",
     "gulp-uglify": "^3.0.1",
     "jsdom": "^24.0.0",
-    "jshint": "^2.9.4"
+    "jshint": "^2.9.4",
+    "grunt": "^1.6.1"
   },
   "homepage": "https://github.com/yegor256/colorizejs",
   "keywords": [
