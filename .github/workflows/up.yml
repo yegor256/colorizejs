@@ -5,19 +5,21 @@
 name: up
 'on':
   push:
+    branches:
+      - master
 jobs:
   up:
     timeout-minutes: 15
     runs-on: ubuntu-24.04
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
       - run: |-
           git fetch --tags --force && \
           latest=$(git tag --sort=creatordate | tail -1) && \
-          sed -E -i "s/drops@[0-9.]+/drops@${latest}/g" README.md
-          sed -E -i "s/drops-[0-9.]+\.min/drops-${latest}.min/g" README.md
+          sed -E -i "s/colorizejs@[0-9.]+/colorizejs@${latest}/g" README.md && \
+          sed -E -i "s/colorizejs-[0-9.]+\.min/colorizejs-${latest}.min/g" README.md && \
           sed -E -i "s/Current version: [0-9.]+/Current version: ${latest}/g" README.md
-      - uses: peter-evans/create-pull-request@v7
+      - uses: peter-evans/create-pull-request@v8
         with:
           sign-commits: true
           commit-message: 'new version in README'
