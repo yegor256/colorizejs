@@ -7,6 +7,10 @@
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](https://github.com/yegor256/colorizejs/blob/master/LICENSE.txt)
 [![NPM version](https://badge.fury.io/js/colorizejs.svg)](https://badge.fury.io/js/colorizejs)
 
+The current version of the library is `1.2.0`,
+  the full list is on the
+  [releases](https://github.com/yegor256/colorizejs/releases) page.
+
 It's a simple [jQuery](https://jquery.com/) plugin
   to colorize data elements according to their values:
 
