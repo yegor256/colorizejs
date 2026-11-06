@@ -1,13 +1,17 @@
+<?xml version="1.0"?>
 <!-- Copyright (c) 2018 Yegor Bugayenko -->
 <!-- SPDX-License-Identifier: MIT -->
-
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8"/>
     <title>ColorizeJS Example</title>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="./src/colorizejs.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js">
+      <!-- Load jQuery. -->
+    </script>
+    <script src="./src/colorizejs.js">
+      <!-- Load the plugin. -->
+    </script>
     <style>
       body {
         font-family: Arial, sans-serif;
@@ -33,7 +37,6 @@
       A minimal example showing how the plugin colors a number based on rules:
     </p>
     <div id="foo">350</div>
-
     <script>
       $("#foo").colorize({ 500: ".green", 0: ".red" });
     </script>

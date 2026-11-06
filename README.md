@@ -15,17 +15,17 @@ It's a simple [jQuery](https://jquery.com/) plugin
   to colorize data elements according to their values:
 
 ```javascript
-$('#foo').colorizejs({ 500: 'green', 0: 'red' });
+$('#foo').colorize({ 500: 'green', 0: 'red' });
 ```
 
-If the value of `#foo` is larger than 500, its color will be set to `green`,
-  if it is larger than zero, it will be set to `red`,
+If the value of `#foo` is at least 500, its color will be set to `green`,
+  if it is at least zero, it will be set to `red`,
   otherwise it won't be touched.
 
 You can also use classes instead of colors by prepending them with a dot:
 
 ```javascript
-$('#foo').colorizejs({ 500: '.green', 0: '.red' });
+$('#foo').colorize({ 500: '.green', 0: '.red' });
 ```
 
 The easiest way is to just include it in your HTML from the
