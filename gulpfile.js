@@ -2,7 +2,6 @@
 // SPDX-License-Identifier: MIT
 
 var gulp = require('gulp'),
-    del = require('del'),
     run = require('gulp-run'),
     notify = require('gulp-notify'),
     jshint = require('gulp-jshint'),
@@ -10,8 +9,9 @@ var gulp = require('gulp'),
     rename = require('gulp-rename'),
     jasmine = require('gulp-jasmine-node');
 
-gulp.task('clean', function () {
-  return del(['dist']);
+gulp.task('clean', async function () {
+  const { deleteAsync } = await import('del');
+  return deleteAsync(['dist']);
 });
 
 gulp.task('compile', function() {
