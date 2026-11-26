@@ -9,17 +9,17 @@
   },
   "description": "A jQuery plugin to colorize a data element according to its value",
   "devDependencies": {
-    "del": "^3.0.0",
-    "gulp": "^5.0.0",
+    "del": "^9.0.1",
+    "gulp": "^5.0.1",
     "gulp-jasmine-node": "^1.0.7",
-    "gulp-jshint": "^2.0.2",
+    "gulp-jshint": "^2.1.0",
     "gulp-notify": "^5.0.0",
-    "gulp-rename": "^2.0.0",
+    "gulp-rename": "^2.1.0",
     "gulp-run": "^1.7.1",
-    "gulp-uglify": "^3.0.1",
-    "jsdom": "^31.0.0",
-    "jshint": "^2.9.4",
-    "grunt": "^1.6.1"
+    "gulp-uglify": "^3.0.2",
+    "jsdom": "^31.0.1",
+    "jshint": "^2.13.6",
+    "grunt": "^1.6.3"
   },
   "homepage": "https://github.com/yegor256/colorizejs",
   "keywords": [

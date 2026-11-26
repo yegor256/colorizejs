@@ -3,7 +3,8 @@
 
 const { JSDOM } = require('jsdom');
 const { window } = new JSDOM();
-global.$ = require('jquery')(window);
+global.window = window;
+global.$ = require('jquery');
 require('../src/colorizejs');
 
 describe('colorizejs', () => {
